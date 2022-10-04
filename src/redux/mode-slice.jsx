@@ -2,9 +2,9 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const modeSlice = createSlice({
   name: 'mode',
-  initialState: { mode: 1 },
+  initialState: { mode: false },
   reducers: {
-    setMode(state, action) {
+    setMode(state) {
       state.mode = !state.mode;
     },
   },

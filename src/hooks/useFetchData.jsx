@@ -7,9 +7,9 @@ const useFetchData = () => {
 
   const getTopArtists = async () => {
     try {
-      const { data } = axios.get(`
+      const { data } = await axios.get(`
         https://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=${process.env.REACT_APP_API_KEY}&format=json`);
-      dispatch(appActions.setTopArtists(data));
+      dispatch(appActions.setTopArtists(data.artists.artist));
     } catch (error) {
       console.log('error', error);
     }
@@ -17,9 +17,9 @@ const useFetchData = () => {
 
   const getTopAlbums = async (name) => {
     try {
-      const { data } = axios.get(`
+      const { data } = await axios.get(`
       https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${name}&api_key=${process.env.REACT_APP_API_KEY}&format=json`);
-      dispatch(appActions.setTopAlbums(data));
+      dispatch(appActions.setTopAlbums(data.topalbums.album));
     } catch (error) {
       console.log('error', error);
     }
@@ -27,9 +27,9 @@ const useFetchData = () => {
 
   const getTopTracks = async (name) => {
     try {
-      const { data } = axios.get(`
+      const { data } = await axios.get(`
       https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${name}&api_key=${process.env.REACT_APP_API_KEY}&format=json`);
-      dispatch(appActions.setTopTracks(data));
+      dispatch(appActions.setTopTracks(data.toptracks.track));
     } catch (error) {
       console.log('error', error);
     }
