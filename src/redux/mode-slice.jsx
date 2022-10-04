@@ -4,7 +4,7 @@ const modeSlice = createSlice({
   name: 'mode',
   initialState: { mode: 1 },
   reducers: {
-    changeMode(state, action) {
+    setMode(state, action) {
       state.mode = !state.mode;
     },
   },
