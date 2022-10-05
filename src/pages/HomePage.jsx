@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import Card from '../components/ArtistCard/ArtistCard';
+import Card from '../components/Card/Card';
 import Container from '../components/Container/Container';
 import useFetchData from '../hooks/useFetchData';
 

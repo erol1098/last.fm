@@ -1,5 +1,7 @@
 .text {
   font-size: 1rem;
+  max-width: 15rem;
+  text-align: center;
 }
 .sm {
   font-size: 1rem;
