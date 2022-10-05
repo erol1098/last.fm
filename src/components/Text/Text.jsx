@@ -5,21 +5,21 @@ import styles from './Text.module.css';
 const Text = ({
   variant = 'content',
   children,
-  bold = 'normal',
+  textStyle = 'normal',
   size = 'sm',
 }) => {
   return (
-    <p className={`${styles[size]} ${styles[bold]} ${styles[variant]}`}>
+    <p className={`${styles[size]} ${styles[textStyle]} ${styles[variant]}`}>
       {children}
     </p>
   );
 };
 
 Text.propTypes = {
-  variant: PropTypes.oneOf(['content', 'title']),
+  variant: PropTypes.oneOf(['content', 'title', 'desc']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
   children: PropTypes.node,
-  bold: PropTypes.oneOf(['normal', 'bold']),
+  textStyle: PropTypes.oneOf(['normal', 'bold', 'italic']),
 };
 
 export default Text;

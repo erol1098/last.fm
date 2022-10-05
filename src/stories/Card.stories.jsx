@@ -9,4 +9,6 @@ const Template = (args) => <Card {...args} />;
 
 export const ArtistCard = Template.bind({});
 
-ArtistCard.args = {};
+ArtistCard.args = {
+  direction: 'row',
+};
