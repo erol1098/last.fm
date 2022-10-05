@@ -9,6 +9,10 @@
   position: sticky;
   top: 0;
 }
+.header div,
+h1 {
+  cursor: pointer;
+}
 
 .dark {
   background-color: #222;

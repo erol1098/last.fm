@@ -1,8 +1,18 @@
+import { Provider } from 'react-redux';
+
+import store from '../redux/';
 import Container from '../components/Container/Container';
 
 export default {
   title: 'Components/Container',
   component: Container,
+  decorators: [
+    (Story) => (
+      <Provider store={store}>
+        <Story />
+      </Provider>
+    ),
+  ],
 };
 
 const Template = (args) => <Container {...args} />;
