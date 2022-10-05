@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import styles from './Card.module.css';
 import Image from '../Image/Image';
@@ -10,13 +11,15 @@ import Button from '../Button/Button';
 import Box from '../Box/Box';
 
 const Card = ({ data, direction = 'row', variant = 'artist' }) => {
+  const mode = useSelector((state) => state.mode.mode);
+
   const navigate = useNavigate();
   const handleClick = () => {
     navigate(`/${data?.name}`);
   };
 
   return (
-    <section className={`${styles.card} ${styles[direction]}`}>
+    <section className={`${styles.card} ${styles[direction]} ${styles[mode]}`}>
       <Image src={data?.image[1]['#text']} alt={data?.name} size='md' />
       <Text textStyle='bold' size='md'>
         {data?.name}

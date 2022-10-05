@@ -11,7 +11,7 @@ const Text = ({
   return (
     <p
       className={`${styles.text} ${styles[size]} ${styles[textStyle]}`}
-      style={{ color }}
+      // style={{ color }}
     >
       {children}
     </p>

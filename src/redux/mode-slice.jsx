@@ -2,10 +2,10 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const modeSlice = createSlice({
   name: 'mode',
-  initialState: { mode: false },
+  initialState: { mode: 'dark' },
   reducers: {
     setMode(state) {
-      state.mode = !state.mode;
+      state.mode = state.mode === 'dark' ? 'light' : 'dark';
     },
   },
 });

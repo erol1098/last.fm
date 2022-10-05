@@ -1,11 +1,13 @@
 .box {
   display: flex;
   padding: 0.3rem;
+  border-radius: 0.5rem;
 }
 .row {
   width: 100%;
   height: fit-content;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
@@ -27,4 +29,10 @@
   align-items: center;
   gap: 1rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.dark {
+  background-color: #333;
+  color: #efefef;
+  box-shadow: #efefef 0px 1px 10px;
 }

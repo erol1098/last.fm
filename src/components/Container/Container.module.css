@@ -7,6 +7,7 @@
   align-items: center;
   gap: 1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.5rem;
 }
 
 .base {
@@ -14,9 +15,15 @@
 }
 
 .narrow {
-  width: 50%;
+  width: 49%;
+  min-width: 40rem;
 }
 
 .wide {
   width: 100%;
+}
+
+.dark {
+  background-color: #333;
+  color: #efefef;
 }

@@ -1,8 +1,16 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+
 import styles from './Container.module.css';
 
 const Container = ({ width = 'base', children }) => {
-  return <div className={`${styles.main} ${styles[width]}`}>{children}</div>;
+  const mode = useSelector((state) => state.mode.mode);
+
+  return (
+    <div className={`${styles.main} ${styles[width]} ${styles[mode]}`}>
+      {children}
+    </div>
+  );
 };
 
 export default Container;
