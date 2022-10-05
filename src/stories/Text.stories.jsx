@@ -4,6 +4,9 @@ export default {
   title: 'Components/Text',
   component: Text,
   argTypes: {
+    color: {
+      control: 'color',
+    },
     children: {
       control: 'text',
     },
@@ -14,24 +17,24 @@ const Template = (args) => <Text {...args} />;
 
 export const Content = Template.bind({});
 Content.args = {
-  variant: 'content',
-  style: 'normal',
+  color: '#000',
+  textStyle: 'normal',
   size: 'sm',
   children: '',
 };
 
 export const Desc = Template.bind({});
 Desc.args = {
-  variant: 'desc',
-  style: 'italic',
+  color: '#000',
+  textStyle: 'italic',
   size: 'sm',
   children: '',
 };
 
 export const Title = Template.bind({});
 Title.args = {
-  variant: 'title',
-  style: 'bold',
+  color: '#000',
+  textStyle: 'bold',
   size: 'md',
   children: '',
 };

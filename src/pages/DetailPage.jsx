@@ -35,12 +35,15 @@ const DetailPage = () => {
           alt={name}
           size='sm'
         />
-        <Text variant='title' textStyle='bold' size='lg'>
+        <Text textStyle='bold' size='lg'>
           {name}
         </Text>
       </Box>
       <Box direction='row'>
         <Container width='narrow'>
+          <Text textStyle='bold' size='lg'>
+            Top Albums
+          </Text>
           {topAlbums?.map(
             (album) =>
               album.name !== '(null)' && (
@@ -54,6 +57,9 @@ const DetailPage = () => {
           )}
         </Container>
         <Container width='narrow'>
+          <Text textStyle='bold' size='lg'>
+            Top Tracks
+          </Text>
           {topTracks?.map((track) => (
             <Card
               key={track?.name}

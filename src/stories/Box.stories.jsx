@@ -17,6 +17,6 @@ Horizontal.args = {
   direction: 'row',
 };
 export const Start = Template.bind({});
-Horizontal.args = {
+Start.args = {
   direction: 'start',
 };
