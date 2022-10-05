@@ -1,0 +1,19 @@
+.text {
+  font-size: 1rem;
+}
+.sm {
+  font-size: 1rem;
+}
+.md {
+  font-size: 1.3rem;
+}
+.lg {
+  font-size: 1.5rem;
+}
+
+.normal {
+  font-weight: 400;
+}
+.bold {
+  font-weight: 800;
+}
