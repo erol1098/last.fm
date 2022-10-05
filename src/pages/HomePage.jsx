@@ -5,7 +5,7 @@ import Container from '../components/Container/Container';
 import useFetchData from '../hooks/useFetchData';
 
 const HomePage = () => {
-  const { getTopArtists } = useFetchData();
+  const { getTopArtists, artistLoading } = useFetchData();
   const topArtists = useSelector((state) => state.app.topArtists);
 
   useEffect(() => {
@@ -16,7 +16,12 @@ const HomePage = () => {
   return (
     <Container width='base'>
       {topArtists.map((artist) => (
-        <Card key={artist.name} data={artist} direction='row' />
+        <Card
+          key={artist.name}
+          data={artist}
+          loading={artistLoading}
+          direction='row'
+        />
       ))}
     </Container>
   );

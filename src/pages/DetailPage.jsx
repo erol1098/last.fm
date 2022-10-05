@@ -23,7 +23,6 @@ const DetailPage = () => {
     getTopTracks(name);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  console.log(topAlbums, topTracks);
 
   return (
     <Container width='wide'>
