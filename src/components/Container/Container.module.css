@@ -13,11 +13,13 @@
 
 .base {
   max-width: 50rem;
+  background-color: #f2be5c;
 }
 
 .narrow {
   width: 49%;
   min-width: 40rem;
+  background-color: #f2be5c;
 }
 
 .wide {
@@ -25,6 +27,6 @@
 }
 
 .dark {
-  background-color: #333;
+  background-color: #222;
   color: #efefef;
 }

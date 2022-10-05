@@ -8,6 +8,7 @@
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 0.5rem;
+  background-color: #bfd9d6;
 }
 
 .row {
@@ -21,4 +22,5 @@
 
 .dark {
   box-shadow: #efefef 0px 1px 10px;
+  background-color: #0d0d0d;
 }

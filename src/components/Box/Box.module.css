@@ -29,10 +29,11 @@
   align-items: center;
   gap: 1rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: #d9caad;
 }
 
 .dark {
-  background-color: #333;
+  background-color: #404040;
   color: #efefef;
   box-shadow: #efefef 0px 1px 10px;
 }
