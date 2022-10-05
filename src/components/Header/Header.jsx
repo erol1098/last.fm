@@ -3,7 +3,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
-import { modeActions } from '../../redux/mode-slice';
+import { modeActions } from '../../lib/mode-slice';
 import Button from '../Button/Button';
 import styles from './Header.module.css';
 

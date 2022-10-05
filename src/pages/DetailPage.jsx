@@ -12,7 +12,8 @@ import Image from '../components/Image/Image';
 import Text from '../components/Text/Text';
 
 const DetailPage = () => {
-  const { getTopAlbums, getTopTracks } = useFetchData();
+  const { getTopAlbums, albumLoading, getTopTracks, trackLoading } =
+    useFetchData();
   const topAlbums = useSelector((state) => state.app.topAlbums);
   const topTracks = useSelector((state) => state.app.topTracks);
 
@@ -51,6 +52,7 @@ const DetailPage = () => {
                   data={album}
                   variant='album'
                   direction='row'
+                  loading={albumLoading}
                 />
               )
           )}
@@ -65,6 +67,7 @@ const DetailPage = () => {
               data={track}
               variant='track'
               direction='row'
+              loading={trackLoading}
             />
           ))}
         </Container>

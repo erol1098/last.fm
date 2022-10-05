@@ -14,7 +14,7 @@ const AppRouter = () => {
     <BrowserRouter>
       <div
         style={{
-          backgroundColor: mode === 'dark' ? '#595959' : ' #3498BF ',
+          backgroundColor: mode === 'dark' ? '#595959' : ' #F2F2EB ',
         }}
       >
         <Header />
