@@ -3,6 +3,7 @@ import Button from '../components/Button/Button';
 export default {
   title: 'Components/Button',
   component: Button,
+  argTypes: { onClick: { action: 'handleClick' } },
 };
 
 const Template = (args) => <Button {...args} />;
@@ -18,7 +19,3 @@ SecondaryBtn.args = {
   variant: 'secondary',
   children: 'Detail',
 };
-
-// export const SecondaryBtn = () => (
-//   <Button variant='secondary' children={'Detail'} />
-// );

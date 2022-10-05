@@ -13,6 +13,7 @@ const Button = ({ variant = 'primary', children, ...rest }) => {
 Button.propTypes = {
   variant: PropTypes.oneOf(['primary', 'secondary']),
   children: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 export default Button;

@@ -1,12 +1,8 @@
 import React from 'react';
 import styles from './Container.module.css';
 
-const Container = ({ direction = 'row', children, ...rest }) => {
-  return (
-    <main className={`${styles.main}`} {...rest}>
-      {children}
-    </main>
-  );
+const Container = ({ width = 'base', children }) => {
+  return <main className={`${styles.main} ${styles[width]}`}>{children}</main>;
 };
 
 export default Container;

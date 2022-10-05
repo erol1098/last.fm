@@ -7,7 +7,7 @@ const Box = ({ children, direction = 'column' }) => {
 };
 
 Box.propTypes = {
-  direction: PropTypes.string,
+  direction: PropTypes.oneOf(['row', 'column', "start"]),
   children: PropTypes.node,
 };
 
